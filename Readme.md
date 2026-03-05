@@ -1,11 +1,12 @@
 This is the simple django-prototype app I created to make it faster to start new django projects.
 
-It has basic email/password authorization and sqlite db.
+It has basic email/password authorization, docker files and postgresql db.
 
 1. `git clone django-prototype`
-2. `python manage.py makemigrations`
-3. `python manage.py migrate`
-4. `python manage.py runserver`
+2. `docker compose up --build`
+3. `docker compose exec web python app/manage.py migrate`
+4. `docker compose exec web python app/manage.py createsuperuser`
+5. go to `http://localhost:8000/auth/login/`
 
 Currently available views:
 
