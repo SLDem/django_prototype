@@ -13,3 +13,5 @@ Currently available views:
 2. _/auth/logout/_
 3. _/auth/signup/_
 4. _/auth/index/_
+
+Check `docker-master` branch for docker+postgresql startup.
